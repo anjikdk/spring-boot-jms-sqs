@@ -5323,3 +5323,30 @@ Caused by: java.lang.RuntimeException: Uncompilable source code - cannot find sy
 11:30:52.437 INFO  c.a.sqs.javamessaging.SQSSession - Shutting down SessionCallBackScheduler executor
 11:30:52.438 INFO  c.a.s.j.SQSMessageConsumer - Shutting down ConsumerPrefetch executor
 11:30:52.439 INFO  c.a.sqs.javamessaging.SQSSession - Shutting down SessionCallBackScheduler executor
+20:25:21.299 INFO  br.com.jonyfs.DemoApplication - Starting DemoApplication using Java 11.0.5 on LAPTOP-MRQE33C7 with PID 31720 (F:\Java_Workspace\spring-boot-jms-sqs\target\classes started by 91939 in F:\Java_Workspace\spring-boot-jms-sqs)
+20:25:21.305 DEBUG br.com.jonyfs.DemoApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+20:25:21.305 INFO  br.com.jonyfs.DemoApplication - No active profile set, falling back to default profiles: default
+20:25:21.430 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:25:21.431 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:25:25.309 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#474dea86' of type [com.amazonaws.auth.BasicAWSCredentials] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:25:25.310 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#6f75f8ff' of type [com.amazonaws.auth.AWSStaticCredentialsProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:25:25.317 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#15dbce87' of type [com.amazonaws.auth.profile.ProfileCredentialsProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:25:25.319 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'credentialsProvider' of type [org.springframework.cloud.aws.core.credentials.CredentialsProviderFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:25:25.319 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'credentialsProvider' of type [com.amazonaws.auth.AWSCredentialsProviderChain] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:25:25.909 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:25:25.920 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:25:25.920 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+20:25:26.026 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:25:26.026 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4594 ms
+20:25:26.191 INFO  br.com.jonyfs.JmsConfig - Started.
+20:25:26.269 INFO  br.com.jonyfs.Producer - Sending MyMessage(id=80d5790a-f7e4-47ff-a6fb-1809fb4d8560, content=HELLO QUEUE A!, date=Mon Aug 16 20:25:26 IST 2021) to queue first_sqs_queue
+20:25:27.275 INFO  c.a.s.j.SQSMessageProducer - Message sent to SQS with SQS-assigned messageId: 41c1a8f3-e991-4b47-9459-1f483a839e40
+20:25:27.279 INFO  c.a.sqs.javamessaging.SQSSession - Shutting down SessionCallBackScheduler executor
+20:25:27.280 INFO  br.com.jonyfs.Producer - Sending HELLO QUEUE B! to queue second_sqs_queue
+20:25:27.735 INFO  c.a.s.j.SQSMessageProducer - Message sent to SQS with SQS-assigned messageId: 6f650f00-f691-4039-9124-76453ad4f518
+20:25:27.735 INFO  c.a.sqs.javamessaging.SQSSession - Shutting down SessionCallBackScheduler executor
+20:25:28.040 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:25:28.276 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:25:28.298 INFO  br.com.jonyfs.DemoApplication - Started DemoApplication in 7.681 seconds (JVM running for 8.504)
+20:25:28.717 INFO  br.com.jonyfs.Consumer - Processing HELLO QUEUE B!  in queue b
+20:25:28.748 INFO  br.com.jonyfs.Consumer - Processing MyMessage(id=80d5790a-f7e4-47ff-a6fb-1809fb4d8560, content=HELLO QUEUE A!, date=Mon Aug 16 20:25:26 IST 2021) in queue a
